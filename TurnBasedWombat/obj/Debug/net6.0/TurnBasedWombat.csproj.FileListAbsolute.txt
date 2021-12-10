@@ -1,0 +1,15 @@
+F:\Visual Studio 2022\Projects\TurnBasedWombat\bin\Debug\net6.0\TurnBasedWombat.exe
+F:\Visual Studio 2022\Projects\TurnBasedWombat\bin\Debug\net6.0\TurnBasedWombat.deps.json
+F:\Visual Studio 2022\Projects\TurnBasedWombat\bin\Debug\net6.0\TurnBasedWombat.runtimeconfig.json
+F:\Visual Studio 2022\Projects\TurnBasedWombat\bin\Debug\net6.0\TurnBasedWombat.dll
+F:\Visual Studio 2022\Projects\TurnBasedWombat\bin\Debug\net6.0\ref\TurnBasedWombat.dll
+F:\Visual Studio 2022\Projects\TurnBasedWombat\bin\Debug\net6.0\TurnBasedWombat.pdb
+F:\Visual Studio 2022\Projects\TurnBasedWombat\obj\Debug\net6.0\TurnBasedWombat.csproj.AssemblyReference.cache
+F:\Visual Studio 2022\Projects\TurnBasedWombat\obj\Debug\net6.0\TurnBasedWombat.GeneratedMSBuildEditorConfig.editorconfig
+F:\Visual Studio 2022\Projects\TurnBasedWombat\obj\Debug\net6.0\TurnBasedWombat.AssemblyInfoInputs.cache
+F:\Visual Studio 2022\Projects\TurnBasedWombat\obj\Debug\net6.0\TurnBasedWombat.AssemblyInfo.cs
+F:\Visual Studio 2022\Projects\TurnBasedWombat\obj\Debug\net6.0\TurnBasedWombat.csproj.CoreCompileInputs.cache
+F:\Visual Studio 2022\Projects\TurnBasedWombat\obj\Debug\net6.0\TurnBasedWombat.dll
+F:\Visual Studio 2022\Projects\TurnBasedWombat\obj\Debug\net6.0\ref\TurnBasedWombat.dll
+F:\Visual Studio 2022\Projects\TurnBasedWombat\obj\Debug\net6.0\TurnBasedWombat.pdb
+F:\Visual Studio 2022\Projects\TurnBasedWombat\obj\Debug\net6.0\TurnBasedWombat.genruntimeconfig.cache

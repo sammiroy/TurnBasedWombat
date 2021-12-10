@@ -1,0 +1,5 @@
+﻿The chance of seeing a shiny Pokémon is 1 in every 8192, or a probability 
+of 0.01220703125% during each encounter.
+
+Type chart link
+https://pokemondb.net/type
