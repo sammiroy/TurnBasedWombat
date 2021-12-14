@@ -15,66 +15,62 @@ namespace TurnBasedWombat
             // Init Variables & Arrays
             string[] pkmnNameArr = File.ReadAllLines(@"F:\Visual Studio 2022\Projects\TurnBasedWombat\data-files\PkmnNames.txt");
             string[] pkmnTypeArr = File.ReadAllLines(@"F:\Visual Studio 2022\Projects\TurnBasedWombat\data-files\PkmnTypes.txt");
-             bool loop = true;
+            bool loop = true;
+            string selection = "";
             
             // -- MAIN MENU --
             while (loop)
             {
-                Console.WriteLine("\n");
-                Console.WriteLine(
-                    "1. See random pokemon's stats\n" +
-                    "2. Generate random pokemon\n" +
-                    "3. Save your random pokemon\n" +
-                    "4. Quit"
-                    );
+                // Get user's menu selection
+                selection = GetMenuSelection();
 
-                // Get user input for menu
-                string uString = "";
-                Console.Write("Please enter menu selection (1-4): \n");
-                uString = Console.ReadLine();
-                loop = MenuLooper(uString, pkmnNameArr, pkmnTypeArr);  
+                // Begin switch statement
+                switch (selection)
+                {
+                    // Generate random pokemon
+                    case "1":
+                        Console.WriteLine();
+                        break;
+
+                    // Show random pokemon's stats
+                    case "2":
+                        break;
+
+                    // Save random pokemon's stats to a .txt files, (the 'save-data' folder)
+                    case "3":
+                        break;
+
+                    // End the menu loop
+                    case "4":
+                        break;
+
+                    // Catch all invalid responses
+                    default:
+                        break;
+                }
             }
         }
 
         /// <summary>
-        /// Simple Method to make sure the menu loop doesn't go on forever
+        /// Display the menu to the user, reading their input
         /// </summary>
-        /// <returns>the yes or no value of the loop variable in Main</returns>
-        public static bool MenuLooper(string uString, string[] pkmnArr, string[] pkmnArr2)
+        /// <returns>the User's input for the main switch statement</returns>
+        public static string GetMenuSelection()
         {
-            switch (uString)
-            {
-                // Show random pokemon's stats
-                case "1":
-                    Console.WriteLine("Show stats");
-                    return true;
+            // Print Menu Options
+            Console.WriteLine("\n");
+            Console.WriteLine(
+                "1. Generate a random pokemon\n" +
+                "2. See your randomly generated pokemon's stats\n" +
+                "3. Save your random pokemon\n" +
+                "4. Quit"
+                );
 
-                // Generate a random pokemon
-                case "2":
-                    Console.WriteLine("Generating pokemon");
-                    Pokemon randGenPkmn = new Pokemon(
-                        pkmnArr[rollDice(0, pkmnArr.Length)],
-                        rollDice(1, 50),
-                        pkmnArr2[rollDice(0, pkmnArr2.Length)],
-                        rollDice(1, 10)
-                        );
-                    return true;
-
-                // Save the random pokemon's data
-                case "3":
-                    Console.WriteLine("Saving pokemon");
-                    return true;
-
-                // Quit the program
-                case "4":
-                    Console.WriteLine("Quitting program");
-                    return false;
-
-                // If user inputs an invalid selection option
-                default:
-                    Console.WriteLine("Please input a valid character");
-                    return true;
-            }
+            // Get user input for menu
+            string uString = "";
+            Console.Write("Please enter menu selection (1-4): \n");
+            uString = Console.ReadLine();
+            return uString;
         }
 
         /// <summary>
