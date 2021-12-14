@@ -6,30 +6,29 @@ using System.Threading.Tasks;
 
 namespace TurnBasedWombat
 {
-    internal class Pokemon
+    class Pokemon
     {
         // Class fields
-        public string PkmnName;
-        public string PkmnType;
-        public int PkmnLevel;
-        public double EncounterWeight;
+        private string name;
+        private string type;
+        private int level;
 
         // Class Constructor
-        public Pokemon(string Name, int Level, string Type, double Weight)
+        public Pokemon(string Name, string Type,  int Level)
         {
-            PkmnName = Name;
-            PkmnLevel = Level;
-            PkmnType = Type;
-            EncounterWeight = Weight;
+            name = Name;
+            type = Type;
+            level = Level;
         }
 
-        internal void ShowStats()
+        // Methods
+        public void ShowStats()
         {
-            Console.WriteLine("Name : " + this.PkmnName);
-            Console.WriteLine("Level: " + this.PkmnLevel);
-            Console.WriteLine("Type: " + this.PkmnType);
-            Console.WriteLine("Encounter Weight: " + this.EncounterWeight);
+            Console.WriteLine("Name : " + this.name);
+            Console.WriteLine("Level: " + this.level);
+            Console.WriteLine("Type: " + this.type);
         }
+
     }
 }
  
